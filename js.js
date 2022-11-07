@@ -1,11 +1,11 @@
 $(document).ready(function(){
     var apikey = "LIVDSRZULELA";
-    var lmt = 18;
   $('.search').click(function(){
-    $(".searched_content").empty();
-    var term = $(".text").val();
-    var url = "https://g.tenor.com/v1/search?q="
-     + term + "&key=" + apikey + "&limit=" + lmt;
+        $(".searched_content").empty();
+        var term = $(".text").val();
+        var num = $(".numbers").val();
+        var url = "https://g.tenor.com/v1/search?q="
+         + term + "&key=" + apikey + "&limit=" + num;  
 // console.log(url)
    
 var xhttp = new XMLHttpRequest();
